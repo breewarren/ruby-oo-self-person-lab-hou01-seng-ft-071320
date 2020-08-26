@@ -45,12 +45,12 @@ class Person
     end
 
     def get_paid(salary)
-        @bank_account = (@bank_account + salary)
+        @bank_account += salary
         return "all about the benjamins"
     end
 
     def take_bath
-        self.hygiene= (@hygiene + 4)
+        self.hygiene = (@hygiene + 4)
         return "♪ Rub-a-dub just relaxing in the tub ♫"
     end
 
@@ -82,9 +82,3 @@ class Person
 
 end
 
-
-# hugo = Person.new
-# hugo.take_bath
-
-# bree = Person.new
-# bree.take_bath
